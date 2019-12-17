@@ -14,7 +14,15 @@
 </head>
 
 <body>
-
+ <section class="media">
+    <audio autoplay>
+  <source src="./media/intro.mp3" type="audio/mpeg" loop="loop">
+  </audio>
+  <div class="audio"> 
+      <button onclick="document.getElementsByTagName('audio')[0].pause();" class="mute"> mute </button>
+      <button onclick="document.getElementsByTagName('audio')[0].play();" class="play"> Sound on </button>
+      </div>
+    </section>
     {{{body}}}
 
 </body>
