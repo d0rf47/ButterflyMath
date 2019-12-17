@@ -272,7 +272,7 @@ let countdown = ()=>{
   
   if(totalMiss >= 6){
    alert("YOU LOSE \n Too Many Misses! \n Please try Again \n Complete all 3 levels for a Final Score!");
-   window.location="../index.html"; 
+   window.location="/"; 
   }
   if(count  < 1){
     let score ={
@@ -282,7 +282,7 @@ let countdown = ()=>{
     
     let scoreArr = [score];
     localStorage.setItem("Lvlscore", JSON.stringify(scoreArr));
-   window.location="../HTML/subtraction.html";
+   window.location="/levels/subtraction";
   }
 }
 

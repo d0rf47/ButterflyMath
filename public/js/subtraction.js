@@ -179,7 +179,7 @@ let mainGame= ()=>
       butterfly.className = "butterflyProp";
       butterfly.id = `butterfly${butterflyCount}`;
       let whatButt = Math.floor((Math.random() * 3) + 1);
-      butterfly.src = `../img/butterfly${whatButt}.png`;
+      butterfly.src = `/media/img/butterfly${whatButt}.png`;
       gameBody.appendChild(butterfly);
       butterflyCount += 1;
 
@@ -296,7 +296,7 @@ let countdown = ()=>{
     scoreArr.push(score);
     
     localStorage.setItem("Lvlscore", JSON.stringify(scoreArr));
-   window.location="../HTML/division.html";
+   window.location="/levels/division";
   }
 }
 

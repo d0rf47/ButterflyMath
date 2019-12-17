@@ -314,3 +314,44 @@ display: block;
     max-width: unset;
   } 
 }
+@media only screen and (min-width: 715px)
+{
+  .container
+  {
+    min-width: unset;
+    max-width: unset;
+  }
+  #mainWrapper
+  {
+    width: 100%;
+    max-width: unset;
+  }
+}
+@media (min-width: 576px)
+{
+  .container 
+  {
+    max-width: unset;
+  }
+  #mainWrapper
+  {
+    width: 100%;
+    max-width: unset;
+  }
+
+}
+
+@media (max-width: 476px)
+{
+  
+  .container 
+  {
+    max-width: unset;
+  }
+  #mainWrapper
+  {
+    height:100%;
+    width: 100%;
+    max-width: unset;
+  }
+}
