@@ -7,6 +7,7 @@ require("dotenv").config({path:'./config/Keys.env'});
 const dbUrl =  `mongodb+srv://${process.env.user}:${process.env.pass}@falconbnb-ppoyi.gcp.mongodb.net/Butterfly?retryWrites=true&w=majority`;
 const session = require('express-session');
 const mainRouter = require('./routes/main')
+const levelRouter = require('./routes/levels')
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
@@ -27,7 +28,8 @@ app.use((req,res,next)=>
     res.locals.user = req.session.userInfo
     next();
 })
-app.use('/', mainRouter)
+app.use('/', mainRouter);
+app.use('/levels', levelRouter)
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 

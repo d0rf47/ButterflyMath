@@ -15,17 +15,20 @@
 </head>
 
 <body>
-    <div  id='mainWrapper'>
+    <div id='mainWrapper'>
+        <div>
         <section class="media">
             <audio autoplay>
                 <source src="./media/intro.mp3" type="audio/mpeg" loop="loop">
             </audio>
-            <div class="audio"> 
+            <nav class="audio"> 
                 <button onclick="document.getElementsByTagName('audio')[0].pause();" class="mute"> mute </button>
                 <button onclick="document.getElementsByTagName('audio')[0].play();" class="play"> Sound on </button>
-            </div>
+                <button onclick="window.location='/';">Home </button>
+                <button onclick="window.location='/leaderboard';">Scoreboard </button>
+            </nav>
         </section>
-        
+        </div>
         {{{body}}}
 
     </div>
