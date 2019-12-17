@@ -1,0 +1,304 @@
+*
+{
+  font-family: 'BioRhyme', serif;
+  margin: 0;
+  padding: 0;
+}
+body, html
+{
+  height:100%;
+}
+#mainWrapper
+{
+  height:100%;
+  background-image: url('/media/img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title 
+{
+  text-align: center;
+  margin: 15px;
+}
+.lvls
+{ 
+  text-align: center;
+}
+.lvls  h3, h4
+{  
+  display: inline;
+}
+.levels
+{ 
+  padding:2rem;
+}
+.CtoP
+{
+  
+  background-color:lightskyblue;
+  border-radius:12px;
+  border: 1px rounded;
+  margin: 3px 10px;
+  padding: 10px 8px;
+  display: inline-block;
+}
+
+.buttons
+{
+position:relative;
+  border:  black 1px ;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+ 
+  align-items: center;
+}
+.buttons button
+{
+  background-color:lightskyblue;
+  border-radius:12px;
+  margin: 3rem 5rem;
+  padding:2px;
+  border: 1px rounded;
+  
+}
+
+
+
+.lvlCont
+{
+  
+  border:  black 1px;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1px;
+  
+  align-items: center;
+  
+}
+
+.lvlCont div
+{
+border:  black 2px;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.lvlCont button
+{
+position: relative;
+display: block;
+}
+
+
+
+
+
+
+
+
+
+.Title{
+  text-align: center;
+  color: red;
+  font-size: 100px;
+}
+
+/*
+.startBut{
+  margin-top: 50px;
+  width: 225px;
+  padding: 14px 25px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  color: black;
+  background-color: red;
+  border-radius: 10px;
+  border:3px solid black;
+  text-decoration: none;
+}
+*/
+
+/*
+.gameFull{
+
+  background-image: url("../IMG/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.playerName{
+  display:block;
+  width: 350px;
+  padding: 14px 25px;
+  font-size: 30px;
+  margin-left:auto;
+  margin-right: auto;
+  font-family:cursive;
+  border:3px solid black;
+}
+
+.gameHead{
+
+  border:2px solid black;
+}
+
+.gameTitle{
+
+  margin-top:2rem;
+  margin-bottom:2rem;
+  margin-left:4rem;
+  margin-right:4rem;
+
+  display:inline-block;
+  text-align:left;
+
+}
+
+.gameStartBut{
+
+  width: 225px;
+  display:inline-block;
+  background-color: lightgray;
+  border-radius: 10px;
+  border:3px solid black;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px 18px;
+}
+
+*/
+.gameBody{
+  border:1px solid black;
+}
+
+
+
+.butterflyProp{
+  display: inline-block;
+  position:absolute;
+  width:180px;
+  height:auto;
+  left:50%;
+  top:50%;
+}
+
+.ranNumProp{
+  left:50%;
+  top:50%;
+  display: inline-block;
+  position:absolute;
+  font-size: 25px;
+  color:white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow:
+		-2px -2px 0 black,
+		2px -2px 0 black,
+		-2px 2px 0 black,
+		2px 2px 0 black;
+}
+
+.check{
+
+  width:275px;
+  height:auto;
+  position: absolute;
+  opacity:0;
+
+
+}
+
+
+.questionBox{
+
+  display: inline-block;
+  position:absolute;
+  font-size: 25px;
+  color:white;
+  padding:5px;
+  z-index:3;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+
+}
+
+.cloud{
+
+  width:185px;
+  height:auto;
+  z-index:2;
+  display: inline-block;
+  position:absolute;
+  opacity:0;
+}
+
+.net{
+  width:170px;
+  height: auto;
+  display: inline-block;
+  position:absolute;
+  opacity:0;
+  top:300px;
+  left:300px;
+  z-index: -1;
+}
+
+.redX{
+  width:275px;
+  height:auto;
+  position: absolute;
+  opacity:0;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .butterflyProp{
+    width: 100px;
+
+  }
+  .ranNumProp{
+    font-size: 15px;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+  }
+}
+
+
+/* //home .butterfly */
+
+.bfly
+{
+  width:120px;
+  height:auto;
+  position: absolute;
+}
+
+#b1
+{
+  left:25%;
+  top: 30%;
+}
+
+#b2
+{
+  left:45%;
+}
+
+#b3
+{
+  left:70%;
+}

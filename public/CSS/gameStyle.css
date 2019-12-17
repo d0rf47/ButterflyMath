@@ -1,0 +1,53 @@
+*
+{
+  font-family: 'BioRhyme', serif;
+  margin: 0;
+  padding: 0;
+}
+.audio
+{
+  text-align: right;
+}
+.gameInfo
+{
+  border: black  1px;
+}
+.scoreboard
+{
+  color: red;
+  font-size: 110%;
+  
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+nav
+{
+  text-align: left;
+  border: black  1px;
+}
+.home
+{
+position: absolute;
+float:  left;
+
+}
+.title
+{
+  text-align: center;
+}
+
+.playGame
+{
+  position:relative;
+  left:47%;
+  padding:1rem;
+  border-radius:3px;
+  border-style:inset;
+  background-color: lightskyblue;
+  background:transparent;
+}

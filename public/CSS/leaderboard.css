@@ -1,0 +1,42 @@
+*
+{
+  font-family: 'BioRhyme', serif;
+}
+h1
+{
+  text-align:center;
+  padding-bottom:30px;
+}
+
+//lastpage
+#scoreBoard 
+{
+  padding-top:20px;
+  font-size:120%;
+  font-weight:bolder;
+  position:relative;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 25px;
+  grid-gap:1px;
+  border: 2px ;
+}
+#scoreBoard #title
+{
+  text-align:center;
+}
+#scoreBoard p
+{
+display:inline-block;
+}
+
+.row
+{
+text-align:center;
+border: 1px;
+}
+
+.scores
+{
+  padding:10px;
+}
